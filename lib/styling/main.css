@@ -1,0 +1,84 @@
+
+:root {
+    --cc-copy-bg: orange;
+    --cc-copied-bg: green;
+    --cc-copy-color: black;
+    --cc-copied-color: white;
+    --cc-scale: 1;
+    --cc-offset: 0;
+    --cc-radius: 0;
+    --cc-borderwidth: 2;
+    --cc-copyborder: 0;
+    --cc-copiedborder: 0;
+}
+
+.reveal pre {
+    width: 100%;
+}
+
+.copycode-wrapper {
+    width: 100%;
+    margin: var(--r-block-margin) auto;
+    position: relative;
+
+    button {
+        z-index: 1;
+        display: flex;
+        position: absolute;
+
+        opacity: 0.5;
+
+        max-height: 100%;
+
+        right: calc(var(--cc-offset, 0) * 1em);
+        top: calc(var(--cc-offset, 0) * 1em);
+
+
+        background-color: var(--cc-copy-bg, orange);
+        color: var(--cc-copy-color, black);
+        border: var(--cc-copyborder, 0);
+        margin: 0;
+        padding: 0.2em 0.5em;
+
+        border-radius: calc(var(--cc-radius, 0) * 1em);
+        font-size: calc(var(--cc-scale, 1) * 1.5rem);
+        line-height: 1.25em;
+        user-select: none;
+        cursor: pointer;
+
+
+    }
+
+    /*UX Feedback*/
+    button {
+        svg {
+            fill: var(--cc-copy-color);
+            height: 1.25em;
+            width: 0.8em;
+
+            &:first-of-type {
+                display: initial;
+            }
+
+            &:last-of-type {
+                display: none;
+            }
+        }
+
+        &.success {
+            svg {
+                &:first-of-type {
+                    display: none;
+                }
+
+                &:last-of-type {
+                    display: initial;
+                }
+            }
+        }
+    }
+
+
+}
+
+

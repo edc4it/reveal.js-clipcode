@@ -14,10 +14,16 @@
   },
   "devDependencies": {
     "@types/reveal.js": "^5.0.1",
+    "autoprefixer": "^10.4.19",
+    "postcss-nesting": "^12.1.0",
     "reveal.js": "^5.0.5",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
+    "vite-plugin-css-injected-by-js": "^3.5.0",
     "vite-plugin-dts": "^3.8.0",
     "vite-plugin-remove-console": "^2.2.0"
+  },
+  "dependencies": {
+    "clipboard": "^2.0.11"
   }
 }
