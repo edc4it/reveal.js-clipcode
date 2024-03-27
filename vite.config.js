@@ -1,6 +1,7 @@
 const path = require('path')
-const { defineConfig } = require('vite')
+const {defineConfig} = require('vite')
 import dts from 'vite-plugin-dts';
+import removeConsole from "vite-plugin-remove-console";
 
 module.exports = defineConfig({
     build: {
@@ -10,5 +11,8 @@ module.exports = defineConfig({
             fileName: (format) => `copy-code.${format}.js`
         }
     },
-    plugins: [dts()]
+    plugins: [
+        dts(),
+        removeConsole()
+    ]
 });
