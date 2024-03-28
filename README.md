@@ -2,8 +2,6 @@
 
 [![Version](https://img.shields.io/npm/v/@edc4it/reveal.js-clipcode)](#)
 
-Here's a refined version of your README text that improves clarity and professionalism:
-
 ---
 
 ## Reveal.js Code Snippet Copier
