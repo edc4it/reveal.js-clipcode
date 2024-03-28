@@ -1,20 +1,21 @@
 import { Options as RevealOptions } from 'reveal.js';
+import { DeepPartial } from './util/utility-types.ts';
 
 export type StyleOptions = {
-  copybg?: string;
-  copiedbg?: string;
-  copycolor?: string;
-  copiedcolor?: string;
-  copyborder?: string;
-  copiedborder?: string;
-  scale?: number;
-  offset?: number;
-  radius?: number;
+  copybg: string;
+  copiedbg: string;
+  copycolor: string;
+  copiedcolor: string;
+  copyborder: string;
+  copiedborder: string;
+  scale: number;
+  offset: number;
+  radius: number;
 };
 
 export type Options = {
-  style?: StyleOptions;
-  timeout?: number;
+  style: StyleOptions;
+  timeout: number;
 };
 
 export const defaultOptions: Options = {
@@ -32,4 +33,4 @@ export const defaultOptions: Options = {
   timeout: 1000,
 };
 
-export type AugmentedRevealOptions = RevealOptions & { clipcode?: Options };
+export type AugmentedRevealOptions = RevealOptions & { clipcode?: DeepPartial<Options> };

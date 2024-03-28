@@ -1,8 +1,7 @@
 import ClipboardJS from 'clipboard';
-import { RecursiveRequired } from '../util/utility-types.ts';
 import { Options } from '../options.ts';
 
-export function initClipboardActions(btnSelector: string, options: RecursiveRequired<Options>) {
+export function initClipboardActions(btnSelector: string, options: Options) {
   const buttons = document.querySelectorAll<HTMLButtonElement>(btnSelector);
 
   buttons.forEach((e) =>
