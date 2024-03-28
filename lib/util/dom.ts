@@ -1,3 +1,3 @@
-import {RequiredFields} from "./utility-types.ts";
+import { RequiredFields } from './utility-types.ts';
 
-export type HTMLElementWithParent = RequiredFields<HTMLElement,"parentNode">
+export type HTMLElementWithParent = RequiredFields<HTMLElement, 'parentNode'>;
