@@ -13,14 +13,13 @@
     "isolatedModules": true,
     "noEmit": true,
 
-
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
-    "types": ["vite/client"],
+    "types": ["vite/client"]
   },
-  "include": ["lib"]
+  "include": ["src"]
 }

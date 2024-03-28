@@ -1,12 +1,29 @@
 {
-  "name": "vite-project",
-  "private": true,
-  "version": "0.0.0",
+  "name": "reveal.js-clipcode",
+  "license": "MIT",
+  "keywords": [
+    "reveal",
+    "reveal.js",
+    "reveal-plugin",
+    "plugin",
+    "clipboard.js"
+  ],
+  "version": "1.0.0",
   "files": [
     "dist"
   ],
-  "main": "./dist/YOUR_LIBRARY_NAME.umd.js",
-  "module": "./dist/YOUR_LIBRARY_NAME.es.js",
+  "author": {
+    "name": "Raphaël Parrée",
+    "email": "rparree@edc4it.com",
+    "web": "https://www.edc4it.com/",
+    "username": "rparree"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edc4it/reveal.js-clipcode.git"
+  },
+  "main": "./dist/clipcode.umd.js",
+  "module": "./dist/clipcode.es.js",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -15,7 +32,7 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix",
+    "*.ts": "eslint --cache --fix",
     "**/*": "prettier --write --ignore-unknown"
   },
   "devDependencies": {
@@ -30,7 +47,6 @@
     "lint-staged": "^15.2.2",
     "postcss-nesting": "^12.1.0",
     "prettier": "^3.2.5",
-    "reveal.js": "^5.0.5",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
     "vite-plugin-css-injected-by-js": "^3.5.0",
@@ -38,6 +54,7 @@
     "vite-plugin-remove-console": "^2.2.0"
   },
   "dependencies": {
+    "reveal.js": "^5.0.5",
     "clipboard": "^2.0.11",
     "deepmerge": "^4.3.1"
   }

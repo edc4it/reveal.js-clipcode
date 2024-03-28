@@ -5,12 +5,11 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>copy-code reveal.js plugin</title>
-    <link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css">
-    <link rel="stylesheet" href="node_modules/reveal.js/dist/theme/black.css">
-    <link rel="stylesheet" href="node_modules/reveal.js/plugin/highlight/monokai.css">
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css" />
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/theme/black.css" />
+    <link rel="stylesheet" href="node_modules/reveal.js/plugin/highlight/monokai.css" />
   </head>
   <body>
-
     <div class="reveal">
       <div class="slides">
         <section>
@@ -19,24 +18,22 @@ $ ls
 drwxr-xr-x 4 me me 4096 Feb 15 08:44  somefile.txt
 drwxr-xr-x 4 me me 4096 Feb 15 08:44  otherfile.txt
           </code></pre>
-
         </section>
       </div>
     </div>
 
     <script type="module">
       import Reveal from 'reveal.js';
-      import ClipCode from './lib/plugin.ts';
+      import ClipCode from './src/plugin.ts';
       import RevealHighlight from 'reveal.js/plugin/highlight/highlight';
       Reveal.initialize({
-          clipcode: {
-             style: {
-                 copybg: "orange" // default
-             }
-         },
-        plugins: [ ClipCode, RevealHighlight ]
+        clipcode: {
+          style: {
+            copybg: 'orange', // default
+          },
+        },
+        plugins: [ClipCode, RevealHighlight],
       });
     </script>
-
   </body>
 </html>
