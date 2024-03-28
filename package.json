@@ -1,5 +1,5 @@
 {
-  "name": "reveal.js-clipcode",
+  "name": "@edc4it/reveal.js-clipcode",
   "license": "MIT",
   "keywords": [
     "reveal",
@@ -8,19 +8,14 @@
     "plugin",
     "clipboard.js"
   ],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "files": [
     "dist"
   ],
-  "author": {
-    "name": "Raphaël Parrée",
-    "email": "rparree@edc4it.com",
-    "web": "https://www.edc4it.com/",
-    "username": "rparree"
-  },
+  "author": "Raphaël Parrée <rparree@edc4it.com> (https://www.edc4it.com/)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/edc4it/reveal.js-clipcode.git"
+    "url": "git+https://github.com/edc4it/reveal.js-clipcode.git"
   },
   "main": "./dist/clipcode.umd.js",
   "module": "./dist/clipcode.es.js",
@@ -54,8 +49,14 @@
     "vite-plugin-remove-console": "^2.2.0"
   },
   "dependencies": {
-    "reveal.js": "^5.0.5",
     "clipboard": "^2.0.11",
-    "deepmerge": "^4.3.1"
-  }
+    "deepmerge": "^4.3.1",
+    "delme": "^1.0.2",
+    "reveal.js": "^5.0.5"
+  },
+  "bugs": {
+    "url": "https://github.com/edc4it/reveal.js-clipcode/issues"
+  },
+  "homepage": "https://github.com/edc4it/reveal.js-clipcode#readme",
+  "description": ""
 }
