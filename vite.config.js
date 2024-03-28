@@ -7,9 +7,9 @@ import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js'
 module.exports = defineConfig({
     build: {
         lib: {
-            entry: path.resolve(__dirname, 'lib/main.ts'),
-            name: 'copy-code',
-            fileName: (format) => `copy-code.${format}.js`
+            entry: path.resolve(__dirname, 'lib/plugin.ts'),
+            name: 'ClipCode',
+            fileName: (format) => `ClipCode${format}.js`
         }
     },
     plugins: [

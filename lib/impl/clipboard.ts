@@ -1,10 +1,12 @@
 import ClipboardJS from "clipboard";
+import {RecursiveRequired} from "../util/utility-types.ts";
+import {Options} from "../options.ts";
 
-export function initClipboardActions(btnSelector: string){
+export function initClipboardActions(btnSelector: string, options: RecursiveRequired<Options>) {
 
     const buttons = document.querySelectorAll<HTMLButtonElement>(btnSelector)
 
-    buttons.forEach(e=>e.addEventListener("click",_=>{
+    buttons.forEach(e => e.addEventListener("click", _ => {
         e.disabled = true
     }))
 
@@ -24,7 +26,7 @@ export function initClipboardActions(btnSelector: string){
         setTimeout(() => {
             trigger.classList.remove("success")
             trigger.removeAttribute("disabled")
-        },1000)
+        }, options.timeout)
     })
     clipboard.on("error", e => {
         e.trigger.removeAttribute("disabled")

@@ -26,10 +26,15 @@ drwxr-xr-x 4 me me 4096 Feb 15 08:44  otherfile.txt
 
     <script type="module">
       import Reveal from 'reveal.js';
-      import CopyCode from './lib/main.ts';
+      import ClipCode from './lib/plugin.ts';
       import RevealHighlight from 'reveal.js/plugin/highlight/highlight';
       Reveal.initialize({
-        plugins: [ CopyCode, RevealHighlight ]
+          clipcode: {
+             style: {
+                 copybg: "orange" // default
+             }
+         },
+        plugins: [ ClipCode, RevealHighlight ]
       });
     </script>
 

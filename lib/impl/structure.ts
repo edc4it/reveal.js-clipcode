@@ -1,7 +1,8 @@
-import {HTMLElementWithParent} from "./util.ts";
-import copySVG from "./styling/copy.svg?raw"
-import copiedSVG from "./styling/copied.svg?raw"
-import "./styling/main.css"
+
+import copySVG from "../styling/copy.svg?raw"
+import copiedSVG from "../styling/copied.svg?raw"
+import {HTMLElementWithParent} from "../util/dom.ts";
+
 
 export function decorateBlock(codeBlock: HTMLElement) {
     if (!codeBlock.parentNode) {
@@ -37,4 +38,5 @@ function addWrapper(codeBlock: HTMLElementWithParent): HTMLDivElement {
     wrapper.appendChild(codeBlock);
     return wrapper;
 }
+
 

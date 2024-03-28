@@ -24,6 +24,7 @@
     "vite-plugin-remove-console": "^2.2.0"
   },
   "dependencies": {
-    "clipboard": "^2.0.11"
+    "clipboard": "^2.0.11",
+    "deepmerge": "^4.3.1"
   }
 }
