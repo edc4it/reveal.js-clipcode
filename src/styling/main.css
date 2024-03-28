@@ -1,14 +1,14 @@
 :root {
-  --cc-copy-bg: orange;
-  --cc-copied-bg: green;
-  --cc-copy-color: black;
-  --cc-copied-color: white;
-  --cc-scale: 1;
-  --cc-offset: 0;
-  --cc-radius: 0;
-  --cc-borderwidth: 2;
-  --cc-copyborder: 0;
-  --cc-copiedborder: 0;
+  --cc-copy-bg: ;
+  --cc-copied-bg: ;
+  --cc-copy-color: ;
+  --cc-copied-color: ;
+  --cc-scale: ;
+  --cc-offset: ;
+  --cc-radius: ;
+  --cc-borderwidth: ;
+  --cc-copyborder: ;
+  --cc-copiedborder: ;
 }
 
 .reveal pre {
