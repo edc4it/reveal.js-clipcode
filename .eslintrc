@@ -2,8 +2,7 @@
   "extends": [
     "eslint:recommended",
     "plugin:import/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "eslint-config-prettier"
+    "plugin:@typescript-eslint/recommended"
   ],
   "settings": {
     "react": {

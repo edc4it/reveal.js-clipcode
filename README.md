@@ -20,7 +20,7 @@ Configuring your Reveal.js presentations to include a 'copy' button for code blo
 
 ---
 
-### npm installation
+### Installation
 
 This plugin is published to, and can be installed from, npm.
 
