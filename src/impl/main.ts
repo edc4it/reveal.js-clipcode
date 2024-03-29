@@ -9,5 +9,5 @@ export function run(revealElement: HTMLElement, options: Options) {
   const blocks = getCodeBlocks(revealElement);
   blocks.map(decorateBlock);
   // unfortunately, ClipboardJS does not accept HTLMElement[]
-  initClipboardActions('.copycode-wrapper > button', options);
+  initClipboardActions('.clipcode-wrapper > button', options);
 }

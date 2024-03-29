@@ -33,7 +33,7 @@ function moveFragmentClasses(codeBlock: HTMLElement & {
 function addWrapper(codeBlock: HTMLElementWithParent): HTMLDivElement {
   // Create a wrapper div
   const wrapper = document.createElement('div');
-  wrapper.classList.add('copycode-wrapper');
+  wrapper.classList.add('clipcode-wrapper');
 
   moveFragmentClasses(codeBlock, wrapper);
 
