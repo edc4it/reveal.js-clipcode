@@ -1,6 +1,7 @@
 import copySVG from '../styling/copy.svg?raw';
 import copiedSVG from '../styling/copied.svg?raw';
 import { HTMLElementWithParent } from '../util/dom.ts';
+import { fragmentClasses } from '../util/reveal-helpers.ts';
 
 export function decorateBlock(codeBlock: HTMLElement) {
   if (!codeBlock.parentNode) {
@@ -19,16 +20,22 @@ export function decorateBlock(codeBlock: HTMLElement) {
   }
 }
 
+function moveFragmentClasses(codeBlock: HTMLElement & {
+                               parentNode: NonNullable<HTMLElement['parentNode']>;
+                             }, wrapper: HTMLDivElement,
+) {
+  // Move fragment from codeBlock to wrapper
+  const c = [...codeBlock.classList].filter((e) => fragmentClasses.includes(e));
+  wrapper.classList.add(...c);
+  codeBlock.classList.remove(...c);
+}
+
 function addWrapper(codeBlock: HTMLElementWithParent): HTMLDivElement {
   // Create a wrapper div
   const wrapper = document.createElement('div');
   wrapper.classList.add('copycode-wrapper');
 
-  // Move fragment from codeBlock to wrapper
-  if (codeBlock.classList.contains('fragment')) {
-    wrapper.classList.add('fragment');
-    codeBlock.classList.remove('fragment');
-  }
+  moveFragmentClasses(codeBlock, wrapper);
 
   // Insert the wrapper into the DOM just before the codeBlock
   codeBlock.parentNode.insertBefore(wrapper, codeBlock);
