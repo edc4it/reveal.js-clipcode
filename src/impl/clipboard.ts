@@ -11,7 +11,7 @@ export function initClipboardActions(btnSelector: string, options: Options) {
   );
 
   const clipboard = new ClipboardJS(buttons, {
-    text: function (trigger) {
+    text: function(trigger) {
       const code = trigger?.nextElementSibling?.querySelector('code');
       const trimmed = code?.innerText.trim();
       // empty string denotes "failure"

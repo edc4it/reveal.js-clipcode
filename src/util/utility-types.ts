@@ -2,6 +2,6 @@ export type RequiredFields<T, K extends keyof T> = T & { [P in K]-?: NonNullable
 
 export type DeepPartial<T> = T extends object
   ? {
-      [P in keyof T]?: DeepPartial<T[P]>;
-    }
+    [P in keyof T]?: DeepPartial<T[P]>;
+  }
   : T;
