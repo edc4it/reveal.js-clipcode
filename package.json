@@ -19,6 +19,7 @@
   },
   "main": "./dist/clipcode.umd.js",
   "module": "./dist/clipcode.es.js",
+  "types": "src/plugin.ts",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
