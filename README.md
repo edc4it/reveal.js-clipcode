@@ -85,14 +85,14 @@ Reveal.initialize({
 });
 ```
 
-- **`timeout`**: The time in milliseconds for the "Copied!"-state to revert back to "Copy".
-- **`style`**: This is an object that contains options for text in the buttons
-  - **`copybg`**: The background color.
-  - **`copiedbg`**: The background color in the Copied state.
-  - **`copycolor`**: The text color.
-  - **`copiedcolor`**: The text color in the Copied state.
-  - **`copyborder`**: A CSS 'border' rule. Can be, for example "1px solid gray".
-  - **`copiedborder`**: A CSS 'border' rule. Can be, for example "1px solid green".
-  - **`scale`**: The scale of the buttons.
-  - **`offset`**: The offset (in em) from the top and the right.
-  - **`radius`**: The border-radius (in em) of the buttons.
+- `timeout`: The time in milliseconds for the "Copied!"-state to revert back to "Copy".
+- `style`: This is an object that contains options for text in the buttons
+  - `copybg`: The background color.
+  - `copiedbg`: The background color in the Copied state.
+  - `copycolor`: The text color.
+  - `copiedcolor`: The text color in the Copied state.
+  - `copyborder`: A CSS 'border' rule. Can be, for example "1px solid gray".
+  - `copiedborder`: A CSS 'border' rule. Can be, for example "1px solid green".
+  - `scale`: The scale of the buttons.
+  - `offset`: The offset (in em) from the top and the right.
+  - `radius`: The border-radius (in em) of the buttons.
