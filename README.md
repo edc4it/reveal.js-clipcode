@@ -60,6 +60,16 @@ Reveal.initialize({
 </pre>
 ```
 
+To disable the plugin for a particular code block, use `data-cc="false"`
+
+```html
+<pre data-cc="false">
+  <code>
+    Here is the code
+  </code>
+</pre>
+```
+
 ## Global options
 
 There are a few options that you can change from the Reveal.js options. The values below are default and do not need to be set if they are not changed. Some of the options were previously not nested; those overrides will continue to work.
