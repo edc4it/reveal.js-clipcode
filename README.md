@@ -1,5 +1,11 @@
 # ClipCode
 
+
+> [!CAUTION]
+> **This project is ARCHIVED.** It is no longer maintained.
+> The active version is now available at https://codeberg.org/edc4it/reveal.js-clipcode
+
+
 [![Version](https://img.shields.io/npm/v/@edc4it/reveal.js-clipcode)](https://www.npmjs.com/package/@edc4it/reveal.js-clipcode)
 
 ---
